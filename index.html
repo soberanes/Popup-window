@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Popup Window Plugin Example</title>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script src="popup-window.js"></script>
+   <style type="text/css">
+      body{
+         text-align: center;	
+      }
+      h1{
+         font-family: "Helvetica Neue",Sans serif;
+         font-size: 20px;	
+      }
+      div.social_button{
+         margin: 0 auto;
+         height: 100px;
+         width: 35px;
+      }
+      div.social_button .facebook{
+         background: url('fb-icon.png');
+         cursor: pointer;
+         width: 31px;
+         height: 31px;
+      }
+      
+   </style>
+</head>
+<body>
+   <h1>Popup Window jQuery Plugin</h1>
+   <div class="social_button">
+      <div class="facebook" data-href="http://www.facebook.com/sharer/sharer.php?u=http://www.paulsoberanes.com"></div>
+   </div>
+   <script type="text/javascript">
+      $(function(){
+         $('.social_button .facebook').popupWindow({ 
+            centerBrowser:1 
+         });	
+      });
+	</script>
+</body>
+</html>
